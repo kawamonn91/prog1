@@ -1,0 +1,11 @@
+  単体テスト
+  prog02main.c: gcc -DTEST -c prog02main.c -o prog02main.o
+  prog02calc.c: gcc -DTEST -c progcalc.c -o prog02calc.o
+  
+  結合テスト/最終的な実行ファイルの動作確認
+  複数コマンドで順次行う場合:
+  gcc -c prog02main.c -o prog02main.o
+  gcc -c prog02calc.c -o prog02calc.o
+  gcc prog02main.o prog02calc.o  -o a.out
+  一度に行う場合: gcc prog02main.c prog02calc.c -o a.out
+  
